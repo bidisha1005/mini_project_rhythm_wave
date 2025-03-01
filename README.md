@@ -49,7 +49,7 @@ mini_project_rhythm_wave/ (Root Directory)
    - **Backend:**
      ```bash
      cd backend
-     npm start
+     npx nodemon app.js
      ```
    - **Frontend:**
      ```bash
