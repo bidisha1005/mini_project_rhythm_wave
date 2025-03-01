@@ -40,9 +40,8 @@ mini_project_rhythm_wave/ (Root Directory)
      npm install
      ```
    - **Frontend:**
-    Open a new terminal and run:
      ```bash
-     cd rhythm-wave-test
+     cd ../rhythm-wave-test
      npm install
      ```
 
@@ -52,9 +51,9 @@ mini_project_rhythm_wave/ (Root Directory)
      cd backend
      npx nodemon app.js
      ```
-   - **Frontend:**
+   - **Frontend: Open a new terminal and run**
      ```bash
-     cd ../rhythm-wave-test
+     cd rhythm-wave-test
      npm start
      ```
 
