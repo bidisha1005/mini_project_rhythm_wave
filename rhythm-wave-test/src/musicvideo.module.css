@@ -1,0 +1,77 @@
+/* Reset styles */
+:global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling for body */
+:global(body) {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('assets/mac 1.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Container for Sidebar and Main Content */
+.container {
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+.main-content h1 {
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2 columns per row */
+    grid-auto-rows: 1fr; /* Ensures uniform row height */
+    gap: 30px; /* Spacing between video boxes */
+    margin-top: 20px;
+    align-items: stretch; /* Ensures all boxes align properly */
+}
+
+.video-box {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left; /* Align text content to the left */
+    background-color: rgba(0, 0, 0, 0.5); /* Subtle background for better visibility */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the video and text */
+}
+
+/* Video */
+.video-box video {
+    width: 100%; /* Ensure the video fits within the container */
+    max-height: 250px; /* Restrict the maximum height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add spacing between the video and text */
+}
+
+/* Text for title and artist */
+.video-box p {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px; /* Ensure readable text size */
+    line-height: 1.5;
+}
+
+/* Ensure grid container takes up the right amount of space */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 18%;
+    overflow-y: auto; /* Scrollable content if there are more than 4 videos */
+    height: 100%; /* Ensure proper container height */
+}
+

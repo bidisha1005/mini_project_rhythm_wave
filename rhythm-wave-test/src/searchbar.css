@@ -1,0 +1,41 @@
+/* Search Bar */
+.search-bar {
+    margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    width: 600px; /* Adjust as needed */
+    border: 1px solid transparent; /* Default border */
+    transition: border-color 0.25s;
+    margin-bottom: 50px; /* Space between search bar and content below */
+}
+
+.search-bar:focus-within {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    flex: 1; /* Allows input to grow */
+    font-size: 16px;
+    color: #000000;
+}
+
+.search-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 5px; /* Space between input and icon */
+    margin-right: 7px;
+}
+
+.search-bar:hover .search-icon {
+    opacity: 0.5; /* Applies hover effect on search icon when hovering over entire search bar */
+}

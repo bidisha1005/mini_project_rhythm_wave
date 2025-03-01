@@ -1,0 +1,109 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: flex-start;
+    margin-top: 40px;
+    position: relative; /* Ensure the footer is positioned relative to this container */
+  }
+  
+  .mainContent {
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Enable scrolling */
+    height: calc(100vh - 160px); /* Adjust height to leave space for header and footer */
+    margin-bottom: 80px; /* Adjust for footer space */
+  }
+  
+  .playlistHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .playlistCover img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .playlistInfo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .playlistInfo p {
+    color: #ccc;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Song List Table */
+  .songList {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fdfcfc;
+  }
+  
+  .songList th,
+  .songList td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .songList th {
+    color: #faf8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .songList td {
+    font-size: 16px;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .songList td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .songList td span {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .songList tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  .songList tr.active {
+    background-color: rgba(0, 204, 255, 0.2); /* Active song highlight */
+  }
+  
+  

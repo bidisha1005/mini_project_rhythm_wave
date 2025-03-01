@@ -1,0 +1,15 @@
+/* Logo Container */
+.logo-container {
+    position: fixed; /* Fix the position to the top-left corner */
+    top: 20px; /* Add some space from the top */
+    left: 1px; /* Add some space from the left */
+    z-index: 2; /* Ensure it appears above other content */
+    display: flex;
+    align-items: center; /* Align logo vertically if there's text or additional elements */
+    justify-content: center;
+}
+
+.logo-container img.logo {
+    width: 130px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}

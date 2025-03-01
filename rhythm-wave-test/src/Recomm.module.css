@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('assets/mac\ 1.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #121212; /* Dark background as fallback */
+    color: #f5f5f5; /* Light text for readability */
+}
+
+.container {
+    max-width: 800px;
+    margin-left: 25%;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker container background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White text */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question label {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e5e5e5; /* Light gray for labels */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.question input[type="radio"] {
+    display: none;
+}
+
+.question input[type="radio"] + label {
+    display: inline-block;
+    background-color: #2b2b2b; /* Dark gray background */
+    border: 2px solid #444; /* Slightly lighter gray border */
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #f5f5f5; /* Light text */
+}
+
+.question input[type="radio"]:checked + label {
+    background-color: #ffffff; /* White background when checked */
+    color: #121212; /* Black text when checked */
+    border-color: #ffffff; /* White border */
+    transform: scale(1.05);
+}
+
+.question input[type="radio"] + label:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #121212; /* Black text on hover */
+    border-color: #ffffff; /* White border on hover */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #121212; /* Dark text for contrast */
+    background-color: #ffffff; /* White button */
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e5e5e5; /* Lighter gray */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); /* Subtle light shadow */
+}
+
+.result {
+    color: #f5f5f5; /* Light text */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2b2b2b; /* Dark background */
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 18%;
+    background-color: black;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    color: white;  
+    position: fixed;      
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto;
+    z-index: 1;     
+    top: 0; /* Ensure it starts from the top */
+    left: 0
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 190px; /* Push the list further down */
+    margin-bottom: auto;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li img.icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.sidebar ul li img.icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.sidebar ul li span {
+    font-size: 18px;
+}
+
+.sidebar ul li span:hover {
+    cursor: pointer;
+}
+
+.sidebar button {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #b3b3b3;
+}
+
+.sidebar ul li a.sidebar-link {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a.sidebar-link:hover {
+    color: #b3b3b3; /* Change text color on hover */
+    transform: translateX(5px); /* Add a slight hover movement */
+}

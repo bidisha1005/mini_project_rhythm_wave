@@ -1,0 +1,73 @@
+.recomm-page123 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: white; /* White text */
+  }
+  
+  .recomm-container123 {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 5px; /* Adjusted margin to provide space for the sidebar */
+    margin-right: 5px; /* Added right margin for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border-radius: 8px;
+  }
+  
+  .recomm-page-title123 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* White text */
+  }
+  
+  .recomm-form-container123 {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* White text */
+  }
+  
+  .recomm-question-container123 {
+    margin-bottom: 20px;
+  }
+  
+  .recomm-question-label123 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white; /* White text */
+  }
+  
+  .recomm-radio-input123 {
+    margin-right: 10px;
+  }
+  
+  .recomm-radio-label123 {
+    margin-right: 20px;
+    font-size: 16px;
+    color: white; /* White text */
+  }
+  
+  .recomm-submit-container123 {
+    margin-top: 20px;
+  }
+  
+  .recomm-submit-button123 {
+    padding: 10px 20px;
+    background-color: red; /* Red button */
+    color: white; /* White text on button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .recomm-submit-button123:hover {
+    background-color: darkred; /* Dark red on hover */
+  }
+  
+  .recomm-result123 {
+    margin-top: 20px;
+    color: white; /* White text */
+  }
+  

@@ -1,0 +1,101 @@
+/* Sidebar */
+.sidebar {
+    width: 18%;
+    background-color: black;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    color: white;  
+    position: fixed;      
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto;
+    z-index: 1;     
+    top: 0; /* Ensure it starts from the top */
+    left: 0
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 190px; /* Push the list further down */
+    margin-bottom: auto;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li img.icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.sidebar ul li img.icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.sidebar ul li span {
+    font-size: 18px;
+}
+
+.sidebar ul li span:hover {
+    cursor: pointer;
+}
+
+.sidebar button {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #b3b3b3;
+}
+
+.sidebar ul li a.sidebar-link {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a.sidebar-link:hover {
+    color: #b3b3b3; /* Change text color on hover */
+    transform: translateX(5px); /* Add a slight hover movement */
+}
+
+.sidebar-footer {
+    font-size: 12px;
+    color: #b3b3b3;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+.sidebar-footer p {
+    margin: 5px 0; /* Spacing between lines */
+  }
+  
+  .sidebar-footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-footer a:hover {
+    color: white;
+  }
+  

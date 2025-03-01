@@ -1,0 +1,72 @@
+.musicPlayer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Ensure it spans the full width of the viewport */
+    margin-left: 130px; /* Add margin to the left */
+    margin-right: 130px; /* Add margin to the right */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .trackInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .albumArt {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .trackDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .songTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .artistName {
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  .playerControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controlButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .controlButton:hover {
+    color: #0a74da;
+  }
+  
+  .volumeControl {
+    display: flex;
+    align-items: center;
+  }
+  
+  .volumeSlider {
+    width: 100px;
+  }
+  

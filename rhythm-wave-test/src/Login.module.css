@@ -1,0 +1,143 @@
+:global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :global(body), :global(html) {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/mac 1 copy.png');
+  }
+  
+  .background {
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* Logo Container */
+  .logoContainer {
+    position: fixed;
+    top: 20px;
+    left: 1px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+  
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginBox {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  .loginBox h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .btnLogin {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btnLogin:hover {
+    background-color: #f6121d;
+  }
+  
+  .socialLogin {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socialIcons button {
+    color: white;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcons button.facebook:hover {
+    color: #3b5998;
+  }
+  
+  .socialIcons button.google:hover {
+    color: #db4437;
+  }
+  
+  .socialIcons button.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .signup {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup a {
+    color: #f6121d;
+    text-decoration: none;
+  }
+  
+  .signup a:hover {
+    text-decoration: underline;
+  }
+  
+  .errorMessage {
+    color: #f6121d;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  

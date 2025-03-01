@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('assets/mac\ 1.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Logo Container */
+.logo-container {
+    position: fixed; /* Fix the position to the top-left corner */
+    top: 20px; /* Add some space from the top */
+    left: 1px; /* Add some space from the left */
+    z-index: 2; /* Ensure it appears above other content */
+    display: flex;
+    align-items: center; /* Align logo vertically if there's text or additional elements */
+    justify-content: center;
+}
+
+.logo-container img.logo {
+    width: 130px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-container {
+    position: absolute; /* Position the profile container absolutely */
+    top: 40px; /* 20px from the top of the screen */
+    right: 40px; /* 20px from the right of the screen */
+    display: flex; /* Flexbox to align the icon */
+    align-items: center; /* Align the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+  }
+  
+  .profile-icon {
+    width: 40px; /* Icon width */
+    height: 40px; /* Icon height */
+    border-radius: 50%; /* Make the icon circular */
+    object-fit: cover; /* Ensure the image covers the circle */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .profile-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+/* Container for Sidebar and Main Content */
+.container {
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 18%;
+}
+
+.main-content h1 {
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.charts, .albums {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Card Style */
+.card {
+    min-width: 150px;
+    max-width: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Card content area for images or main content */
+.card-content {
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover  {
+    transform: scale(1.05);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); /* Background color with transparency */
+    backdrop-filter: blur(10px);
+}
+
+/* Card title below the card content */
+.card-title {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* Scrollbar Styling */
+.charts::-webkit-scrollbar, .albums::-webkit-scrollbar {
+    height: 8px;
+}
+
+.charts::-webkit-scrollbar-thumb, .albums::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.charts::-webkit-scrollbar-track, .albums::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+.card-description {
+    font-size: 0.8em; /* Adjust the size as needed */
+    color: #e2e2e2; /* Optional: Change the color to fit your design */
+    margin: 5px 0; /* Add some spacing above and below the text */
+    text-align: left; /* Center align the description if desired */
+    width: 100%; /* Ensure the paragraph takes the full width of the card */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    padding: 0 5px;
+    overflow-wrap: break-word; /* Allow long words to break and prevent overflow */
+    white-space: pre-line; 
+}
+
+.card-image {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    width: 600px; /* Adjust as needed */
+    border: 1px solid transparent; /* Default border */
+    transition: border-color 0.25s;
+    margin-bottom: 25px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.search-bar:focus-within {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    flex: 1; /* Allows input to grow */
+    font-size: 16px;
+    color: #000000;
+}
+
+.search-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 5px; /* Space between input and icon */
+    margin-right: 7px;
+}
+
+.search-bar:hover .search-icon {
+    opacity: 0.5; /* Applies hover effect on search icon when hovering over entire search bar */
+}
+
+/* Updated Artist Card to Match Card Styling */
+/* Artist Card */
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px; /* Optional: set a max-width to align artist names */
+    margin: 20px 10px 115px 30px;
+    transition: transform 0.3s;
+}
+
+/* Artist Image */
+.artist-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Add a background color if images are transparent */
+    object-fit: cover; /* Ensures the image covers the circular area */
+}
+
+/* Artist Hover Effect */
+.artist-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Artist Name Styling */
+.artist-name {
+    margin-top: 8px;
+    font-size: 16px;
+    color: white; /* Adjust based on background */
+}
+
+/* Scrollable Artists Section */
+.artists {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use the card's color scheme */
+    display: block; /* Make the link cover the entire card */
+}
+
+.card-link:hover .card {
+    transform: scale(1.02); /* Add a slight hover effect to the card */
+    transition: transform 0.3s ease; /* Smooth transition */
+}

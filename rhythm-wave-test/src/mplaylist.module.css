@@ -1,0 +1,89 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Playlist Section */
+.body {
+    background-image: url('assets/mac 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0; /* Ensure no margin around the body */
+}
+
+/* Adjust Main Content Section to be wider and left-aligned */
+.mainContent {
+    width: 150%;  /* Make the content wider */
+    padding: 20px;
+    overflow-y: auto;
+    margin-left: 20px;  /* Left-align the content */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 120px;
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: flex-start; /* Left-align the form elements */
+}
+
+.formInput, .formButton {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%; /* Ensure full width of the input elements */
+    max-width: 600px;  /* Allow the inputs and button to be wider */
+}
+
+/* Button styling */
+.formButton {
+    background-color: #af4c4c;
+    color: white;
+    cursor: pointer;
+}
+
+.formButton:hover {
+    background-color: #a04545;
+}
+
+/* Song List Table */
+.songList {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fdfcfc;
+    margin-top: 20px; /* Add some space before the table */
+}
+
+.songList th, .songList td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.songList th {
+    color: #faf8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.songList td {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.songList tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
