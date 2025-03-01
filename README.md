@@ -63,3 +63,10 @@ Secure API with JWT authentication
 Responsive UI built with React  
 CRUD operations via REST API  
 
+## Few test users created for login
+1. email: test1@gmail.com
+   password: hello
+2. email: test2@gmail.com
+   password: 123
+3. email: test@gmail.com
+   password: h1llo
